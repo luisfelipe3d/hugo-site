@@ -7,12 +7,13 @@ paginate = 5
 [server]
 [[server.headers]]
   for = '/*'
-  [server.headers.values]
-    Content-Security-Policy = 'script-src https://dev.luisfelipe3d.pages.dev'
-    Referrer-Policy = 'strict-origin-when-cross-origin'
-    X-Content-Type-Options = 'nosniff'
-    X-Frame-Options = 'DENY'
-    X-XSS-Protection = '1; mode=block'
+  
+[server.headers.values]
+  X-Frame-Options = "DENY"
+  X-XSS-Protection = "1; mode=block"
+  X-Content-Type-Options = "nosniff"
+  Referrer-Policy = "strict-origin-when-cross-origin"
+#  Content-Security-Policy = "script-src localhost:1313"
 
 [params]
   # dir name of your main content (default is `content/posts`).
