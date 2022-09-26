@@ -3,6 +3,17 @@ languageCode = "en-us"
 theme = "terminal"
 paginate = 5
 
+
+[server]
+[[server.headers]]
+  for = '/**'
+  [server.headers.values]
+    Content-Security-Policy = 'script-src https://luisfelipe3d.pages.dev'
+    Referrer-Policy = 'strict-origin-when-cross-origin'
+    X-Content-Type-Options = 'nosniff'
+    X-Frame-Options = 'DENY'
+    X-XSS-Protection = '1; mode=block'
+
 [params]
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
