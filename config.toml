@@ -6,9 +6,9 @@ paginate = 5
 
 [server]
 [[server.headers]]
-  for = '/**'
+  for = '/*'
   [server.headers.values]
-    Content-Security-Policy = 'script-src https://luisfelipe3d.pages.dev'
+    Content-Security-Policy = 'script-src https://dev.luisfelipe3d.pages.dev'
     Referrer-Policy = 'strict-origin-when-cross-origin'
     X-Content-Type-Options = 'nosniff'
     X-Frame-Options = 'DENY'
